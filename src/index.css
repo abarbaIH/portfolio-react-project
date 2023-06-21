@@ -11,3 +11,235 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.layout {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header {
+  height: 132px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 35px;
+}
+
+.header .logo {
+  flex-grow: 2;
+  display: flex;
+}
+
+.header .logo span {
+  display: block;
+  font-size: 90px;
+  font-weight: bolder;
+  margin-top: -8px;
+}
+
+.header .logo h3 {
+  display: block;
+  flex-basis: 40px;
+  margin-left: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.header nav {
+  flex-grow: 1;
+}
+
+.header nav ul {
+  height: 132px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.header li {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header li a {
+  color: black;
+  transition: all 400ms;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #fa4520;
+}
+
+.header .active {
+  color: #fa4520;
+}
+
+.footer {
+  min-height: 40px;
+  line-height: 7px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 80px;
+  border-top: 3px solid black;
+  padding-top: 40px;
+  background: #f5f5f5;
+  color: #444;
+}
+
+.content {
+  min-height: 400px;
+}
+
+.home h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 54px;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+.home strong {
+  color: #fa4520;
+}
+
+.home h2 {
+  color: rgb(60, 60, 60);
+  font-weight: lighter;
+}
+
+.home .title a {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #fa4520;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.home .title a:hover {
+  background-color: rgb(47, 255, 109);
+  color: black;
+}
+
+.page .heading,
+.home .heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.home p {
+  color: rgb(60, 60, 60);
+}
+
+.page .heading {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  padding: 15px;
+  width: 300px;
+  margin-top: 25px;
+}
+
+input[type="submit"],
+button {
+  font-size: 15px;
+  padding: 12px;
+  margin-top: 15px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #fa4520;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: rgb(47, 255, 109);
+  color: black;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  flex-basis: 35%;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.project-item .mask {
+  width: 100%;
+  height: 325px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 8px 8px 15px #ddd;
+}
+
+.project-item .mask:hover img {
+  width: 130%;
+  margin-right: 30%;
+
+}
+
+.project-item img {
+  width: 100%;
+  transition: all .9s;
+}
+
+.project-item span {
+  color: gray;
+  display: block;
+  margin-top: 35px;
+}
+
+.project-item h2 {
+  font-size: 26px;
+  color: black;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.project-item a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.project-item a:hover {
+  color: #fa4520;
+  cursor: pointer;
+}
+
+.project-item h3 {
+  display: block;
+  color: grey;
+  padding-top: 15px;
+  margin-top: 0px;
+  border-top: 1px solid #ddd;
+}
+
+.page-project .mask {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
